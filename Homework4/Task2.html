@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+Создайте массив styles с элементами «Джаз», «Блюз».
+● Добавьте в конец значение «Рок-н-Ролл»
+● Замените предпоследнее значение с конца на «Классика». Код
+замены предпоследнего значения должен работать для массивов
+любой длины.
+● Удалите первое значение массива и выведите его в консоль.
+● Добавьте в начало значения «Рэп» и «Регги».
+
+<body>
+
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <p id="id5"></p>
+
+
+<script>
+
+let styles = [`Джаз`,`Блюз`]; 
+
+id1.innerHTML = styles;
+
+styles.push(`Рок-н-ролл`);
+
+id2.innerHTML = styles;
+
+styles.splice(1,1,`Классика`);
+
+id3.innerHTML = styles;
+
+let cutEntry = styles.shift();
+
+console.log(cutEntry);
+
+id4.innerHTML = styles;
+
+styles.unshift(`Рэп`,`Регги`);
+
+id5.innerHTML = styles;
+
+</script>
+
+
+
+</body>
+</html>
+
