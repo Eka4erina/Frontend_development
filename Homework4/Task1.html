@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <p id="id1"></p>
+
+<script>
+
+let arr = []; 
+let newElement; 
+ 
+do {
+    
+    newElement = prompt (`Type an entry (Cancel, no number value and empty string closes the action): `);
+    
+    if (newElement === null) { 
+        break};
+    
+    if (newElement!=0 ) {
+        arr.push(newElement);}
+
+} while (newElement != 0 )
+
+id1.innerHTML = arr;
+
+</script>
+
+
+
+</body>
+</html>
