@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .block {
+            width: 250px;
+            height: 250px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;  
+    
+        }
+
+
+    </style>
+
 </head>
 
 
@@ -24,7 +39,7 @@
     function createBlocks (number) {
         let printedBlocks = '<div id="container">';
         for (i = 1; i <= number; i++) {
-            printedBlocks += `<div class="block"><img src="lilac.jpg" width="100" height="100""></div>`;
+            printedBlocks += `<div class="block" width="250px" height="250px"><img src="lilac.jpg" width="100" height="100""></div>`;
         }
     return printedBlocks+'</div>';    
     }
