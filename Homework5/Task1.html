@@ -16,6 +16,13 @@
             margin: 10px;  
         }
 
+        .container {
+            display: grid;
+            gap: 10px;
+            height: 100vh;
+            grid-template-columns: repeat(5,1fr);
+        }
+
 
     </style>
 
@@ -38,7 +45,7 @@
     function createBlocks (number) {
        
 
-        let printedBlocks = '<div id="container">';
+        let printedBlocks = '<div class="container">';
         for (i = 1; i <= number; i++) {
             //generate block color
             let s = [];
@@ -58,7 +65,7 @@
 
     let userNumber = +prompt('Type number of blocks: ');
     id.innerHTML = createBlocks(userNumber);
-
+    
 
     </script>
     
