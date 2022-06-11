@@ -13,7 +13,7 @@
 <p id="id"></p>
     
     <script>
-    // <div id= "block">Блок навигации</div>
+    // <div id= "block">Блок</div>
     //1) Напишите скрипт, который с помощью функции создает столько
     // блоков 250 х 250 пикселей, сколько введено в prompt и раскрашивает
     // каждый блок рандомным цветом, размещает в центр каждого блока
@@ -22,16 +22,16 @@
     let number;
 
     function createBlocks (number) {
-        let printedBlocks = '';
+        let printedBlocks = '<div id="container">';
         for (i = 1; i <= number; i++) {
-            printedBlocks += `<div id${i}= "block">Блок${i}</div>`;
+            printedBlocks += `<div class="block"><img src="lilac.jpg" width="100" height="100""></div>`;
         }
-    return printedBlocks;    
+    return printedBlocks+'</div>';    
     }
 
     let userNumber = +prompt('Type number of blocks: ');
     id.innerHTML = createBlocks(userNumber);
-     
+
 
     </script>
     
